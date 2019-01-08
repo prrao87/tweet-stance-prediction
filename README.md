@@ -10,14 +10,10 @@ interesting papers in 2018 that discuss the power of language models in natural 
 used to provide pre-trained representations of a language's syntax, which can be far more useful when training a neural 
 network for previously unseen tasks.
 
-The below sections highlight the installation steps for each technique studied. 
+The below sections highlight the installation steps for each approach used. 
+Python 3.6+ and PyTorch 1.0.0 is used for all the work shown.
 
-## Option 1: ULMFit with the *fastai* framework
-
-This utilizes the *Fastai* framework (built on top of PyTorch) to perform
-stance classification. Python 3.6+ is used for all the work shown.
-
-### ULMFit Installation
+### Module Installation
 
 Set up virtual environment:
 
@@ -29,21 +25,34 @@ Once virtual environment has been set up, activate it for further development.
 
     source venv/bin/activate
 
-This implementation uses **v1** of ```fastai```, which has been 
-refactored for efficiency and updated to move forward with future PyTorch versions.
-
-Install ```pytorch``` and ```fastai``` as shown below:
+## PyTorch requirements
+Install the latest version of ```pytorch``` (1.0+) as shown below:
 
     pip3 install -r pytorch-requirements.txt
+
+## ULMFit with the *fastai* framework
+
+This utilizes the *fastai* framework (built on top of PyTorch) to perform
+stance classification. 
+
+The notebook ```ulmfit.ipynb``` uses **v1** of ```fastai```, which has been 
+refactored for efficiency and updated to move forward with future PyTorch versions (1.0+).
+
+Install ```fastai``` as shown below:
+
     pip3 install fastai
+
+## spaCy language model
 
 For tokenization, ```fastai``` uses the SpaCy library's English language model. This has
 to be downloaded manually:
 
     python3 -m spacy download en
 
-See the included Jupyter notebook for the workflow used for stance classification using 
-ULMFit. 
+## Stance Classification
+
+See the included Jupyter notebooks for the stance classification workflow using 
+ULMFit and the OpenAI transformer. 
 
 ## Evaluation
 
