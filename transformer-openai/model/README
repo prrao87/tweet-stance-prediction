@@ -1,0 +1,5 @@
+Download the weights of the OpenAI pre-trained model by cloning the OpenAI transformer repo and placing the
+ `model` folder's contents in this location (these contain the pre-trained weights).
+
+OpenAI Repo: 
+https://github.com/openai/finetune-transformer-lm
