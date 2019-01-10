@@ -10,10 +10,23 @@ interesting papers in 2018 that discuss the power of language models in natural 
 used to provide pre-trained representations of a language's syntax, which can be far more useful when training a neural 
 network for previously unseen tasks.
 
-The below sections highlight the installation steps for each approach used. 
-Python 3.6+ and PyTorch 1.0.0 is used for all the work shown.
+## Analysis Notebooks
+
+See the included Jupyter notebooks for the stance classification workflow using 
+ULMFit and the OpenAI transformer.
+
+**Method 1: ULMFiT**
+
+[ulmfit.ipynb](https://github.com/prrao87/tweet-stance-prediction/blob/master/ulmfit.ipynb): (LSTM-based approach)
+
+**Method 2: OpenAI Transformer** 
+
+[transformer.ipynb](https://github.com/prrao87/tweet-stance-prediction/blob/master/transformer.ipynb): (Transformer-based approach)
 
 ### Module Installation
+
+The below sections highlight the installation steps for each approach used. 
+Python 3.6+ and PyTorch 1.0.0 is used for all the work shown.
 
 Set up virtual environment:
 
@@ -47,12 +60,7 @@ Install ```fastai``` as shown below:
 For tokenization, ```fastai``` uses the SpaCy library's English language model. This has
 to be downloaded manually:
 
-    python3 -m spacy download en
-
-## Stance Classification
-
-See the included Jupyter notebooks for the stance classification workflow using 
-ULMFit and the OpenAI transformer. 
+    python3 -m spacy download en 
 
 ## Evaluation
 
