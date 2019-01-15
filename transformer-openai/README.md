@@ -1,6 +1,8 @@
 # PyTorch implementation of OpenAI's Finetuned Transformer Language Model
 
-This is a PyTorch implementation of the [TensorFlow code](https://github.com/openai/finetune-transformer-lm) provided with OpenAI's paper ["Improving Language Understanding by Generative Pre-Training"](https://blog.openai.com/language-unsupervised/) by Alec Radford, Karthik Narasimhan, Tim Salimans and Ilya Sutskever.
+The code in this directory fully derives from the PyTorch port of the OpenAI transformer (that was originally written in TensorFlow) - the port was done by HuggingFace and [is available in its original form here](https://github.com/huggingface/pytorch-openai-transformer-lm).
+
+This PyTorch implementation of the [TensorFlow code](https://github.com/openai/finetune-transformer-lm) is provided with OpenAI's paper ["Improving Language Understanding by Generative Pre-Training"](https://blog.openai.com/language-unsupervised/) by Alec Radford, Karthik Narasimhan, Tim Salimans and Ilya Sutskever.
 
 This implementation comprises **a script to load in the PyTorch model the weights pre-trained by the authors** with the TensorFlow implementation.
 
