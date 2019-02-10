@@ -1,8 +1,8 @@
 # Stance Classification of Tweets using Transfer Learning
-This repository contains examples of using transfer learning techniques (along with existing neural network architectures) 
+Applying transfer learning (using existing neural network architectures) 
 to perform stance classification of Tweets as per the [SemEval 2016 Stance Detection Task](http://alt.qcri.org/semeval2016/task6/).
 
-[I wrote about these results on Medium](https://towardsdatascience.com/transfer-learning-in-nlp-for-tweet-stance-classification-8ab014da8dde) and compared (in detail) the transfer learning approaches used.
+[The methodology is described in detail in this Medium post](https://towardsdatascience.com/transfer-learning-in-nlp-for-tweet-stance-classification-8ab014da8dde) and compared (in detail) the transfer learning approaches used.
 
 Subtask A requires us to classify Tweets in response to a particular topic into one of three classes: *Favor*, 
 *Against* and *None*. The provided notebooks attempt this using a technique in deep learning called *transfer learning*.
